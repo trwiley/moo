@@ -20,11 +20,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install pdm
           pdm install
-      - name: Run Ontology Tests
-        working-directory: ./tests
-        run: |
-          make
+      # - name: Run Ontology Tests
+      #   working-directory: ./tests
+      #   run: |
+      #     make
       - name: Build moo ontology file and documentation
         working-directory: ./
         run: |
-          sh ./build.sh
+          sh ./build-development.sh
