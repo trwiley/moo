@@ -24,6 +24,7 @@ jobs:
       #   working-directory: ./tests
       #   run: |
       #     make
+      # hi
       - name: Build moo ontology file and documentation
         working-directory: ./
         run: |
